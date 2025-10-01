@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Panier</title>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  <link href="styles.css" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="header-top">
+            <a href="accueil.html">
+                <img src="logo ANIMEZONE.jpg" alt="ANIME ZONE">
+                <h1>ANIME ZONE</h1>
+            </a>
+        </div>
+        <div class="header-buttons">
+            <a href="login.html" class="btn">Connexion</a>
+            <a href="signup.html" class="btn">Inscription</a>
+        </div>
+        <div class="header-main">
+        <h2>BIENVENUE SUR ANIME ZONE</h2>
+        <h3>Association de fans d’animés</h3>
+        <nav aria-label="menu de navigation">
+            <ul>
+                <li><a href="Accueil.html" class="active">Accueil</a></li>
+                <li><a href="Produits.html">Produits</a></li>
+                <li><a href="Catégories.html">Catégories</a></li>
+            </ul>
+            <a href="Panier.html"><i class="fas fa-shopping-cart"></i> Panier</a>
+        </nav>
+        </div>
+
+        <div class="search-bar">
+            <input type="text" id="search" name="search" placeholder="Rechercher...">
+            <i class="fas fa-search search-icon"></i>
+        </div>
+
+
+    </header>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+    }
+    header, footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 15px;
+    }
+    nav a {
+      color: white;
+      margin: 0 10px;
+      text-decoration: none;
+    }
+    main {
+      padding: 20px;
+    }
+    form {
+      max-width: 400%;
+      margin: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
+    input, textarea, button {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+    }
+    button {
+      background: #333;
+      color: white;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #555;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div style="display: flex; align-items: center;">
+      <a href="accueil.html">
+        <img src="logo ANIMEZONE.jpg" alt="ANIME ZONE" style="max-width:100px; height:auto; margin-right:15px;">
+      </a>
+    <h1 style="margin: 0; text-align: center; width: 100%;">ANIME ZONE</h1>
+    </div>
+    <nav>
+      <a href="accueil.html">Accueil</a>
+      <a href="Produits.html">Produits</a>
+      <a href="Panier.html">Panier</a>
+    </nav>
+  </header>
+
+  <main>
+    <h2>Contactez-nous</h2>
+    <p>Remplissez ce formulaire pour nous envoyer un message :</p>
+
+    <form action="mailto:tonemail@example.com" method="post" enctype="text/plain">
+      <label for="nom">Nom :</label>
+      <input type="text" id="nom" name="nom" required>
+
+      <label for="email">Email :</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message :</label>
+      <textarea id="message" name="message" rows="5" required></textarea>
+
+      <button type="submit">Envoyer</button>
+    </form>
+  </main>
+
+  <footer class="footer">
+        <p>&copy; Grace 2025 | Tout droit réserver </p>
+        <p>
+            <a href="404.html">Mention légales</a>
+            <a href="404.html">Crédits</a>
+        </p>
+        <div id="social-media">
+            <a href="404.html" class="social-icon"><i class="fab fa-facebook-f"></i></a>
+            <a href="404.html" class="social-icon"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+        </div>
+        <a href="#top" class="footer-arrow" style="display:inline-block; margin-top:10px;">
+            <i class="fas fa-arrow-up" style="font-size: 1.5em;"></i>
+        </a>
+  </footer>
+
+</body>
+</html>
